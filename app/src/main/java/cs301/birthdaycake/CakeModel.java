@@ -20,8 +20,26 @@ public class CakeModel {
     }
 
 
+    //creating all the getters below
+
     public CakeModel getCakeModel() {
         return cakeModel;
+    }
+
+    public boolean getCandlesLit(){
+        return candlesLit;
+    }
+
+    public int getNumCandles(){
+        return numCandles;
+    }
+
+    public boolean getHasCandles() {
+        return hasCandles;
+    }
+
+    public boolean getHasFrosting() {
+        return hasFrosting;
     }
 
 
