@@ -35,6 +35,7 @@ public class CakeView extends SurfaceView {
     public static final float innerFlameRadius = 15.0f;
 
 
+    private CakeModel cakeModel;
 
     /**
      * ctor must be overridden here as per standard Java inheritance practice.  We need it
@@ -45,6 +46,8 @@ public class CakeView extends SurfaceView {
 
         //This is essential or your onDraw method won't get called
         setWillNotDraw(false);
+
+        cakeModel = new CakeModel();
 
         //Setup our palette
         cakePaint.setColor(0xFFC755B5);  //violet-red
@@ -125,6 +128,10 @@ public class CakeView extends SurfaceView {
         drawCandle(canvas, cakeLeft + cakeWidth/3 - candleWidth/3, cakeTop);
 
     }//onDraw
+
+    public CakeModel getCakeModel() {
+        return cakeModel;
+    }
 
 }//class CakeView
 

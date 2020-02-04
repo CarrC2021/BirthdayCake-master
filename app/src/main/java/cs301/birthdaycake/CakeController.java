@@ -8,8 +8,8 @@ public class CakeController {
     private CakeModel cakeModel;
 
     public CakeController(CakeView view){
-        CakeView cakeView = view;
-        cakeModel = cakeModel.getCakeModel();
+        cakeView = view;
+        cakeModel = cakeView.getCakeModel();
     }
 
 

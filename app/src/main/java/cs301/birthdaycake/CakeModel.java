@@ -10,8 +10,6 @@ public class CakeModel {
     public boolean hasFrosting;
     public boolean hasCandles;
 
-    private CakeModel cakeModel;
-
     public CakeModel(){
         candlesLit = true;
         numCandles = 2;
@@ -21,10 +19,6 @@ public class CakeModel {
 
 
     //creating all the getters below
-
-    public CakeModel getCakeModel() {
-        return cakeModel;
-    }
 
     public boolean getCandlesLit(){
         return candlesLit;
